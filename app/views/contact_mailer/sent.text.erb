@@ -1,0 +1,16 @@
+ContactMailer#sent
+
+以下の内容でお問い合わせ頂きました。
+
+=======================
+お名前
+<%= @contact.name %>
+
+メールアドレス
+<%= @contact.email %>
+
+お問い合わせ内容
+<%= @contact.content %>
+=======================
+
+<%= @greeting %>, find me in app/views/app/views/contact_mailer/sent.text.erb

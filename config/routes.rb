@@ -1,5 +1,7 @@
 SampleApp::Application.routes.draw do
+  get "contacts/new"
   resources :pictures
+  resources :contacts, only: [:new, :create]
 
   devise_for :users, :controllers => {
     :registrations => "registrations"
